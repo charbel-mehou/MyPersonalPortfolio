@@ -15,6 +15,7 @@ const handleGithubClic=()=>{
 const handleEmailClick = () => {
   window.open('mailto:mehoucharbel@gmail.com?subject=Contact depuis le site Web', '_blank');
 }
+
 const Footer = () => {
   const {t} =useTranslation()
   return(
