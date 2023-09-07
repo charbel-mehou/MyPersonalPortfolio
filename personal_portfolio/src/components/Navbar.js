@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Stack,Box } from '@mui/material'
 import { useTranslation } from 'react-i18next'
-import LangageSwitcher from './LangageSwitcher'
+import langageSwitcher from './langageSwitcher'
 const Navbar = () => {
   const {t} = useTranslation();
   return (
@@ -15,7 +15,7 @@ const Navbar = () => {
           <Link to='/skills' className='link-style'>{t('skills')}</Link>
         </Stack>
          <Box sx={{ display: 'flex',alignItems: 'flex-end', justifyContent: { xs: 'flex-start', lg: 'flex-end' } }}>
-          <LangageSwitcher />
+          <langageSwitcher />
          </Box>
       </Box>
     </Box>

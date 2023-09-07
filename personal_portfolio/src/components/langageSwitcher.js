@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import frIcon from '../assets/icons/fr-icon.png'
 import enIcon from '../assets/icons/en-icon.png'
 
-const LangageSwitcher = () => {
+const langageSwitcher = () => {
   const { i18n } = useTranslation();
 
   const changeLanguage = (lng) => {
@@ -26,7 +26,7 @@ const LangageSwitcher = () => {
         <img src={enIcon} alt="enIcon" style={{ width: '24px', height: '24px' }} />
       </IconButton>
     </Box>
-  );
-};
+  )
+}
 
-export default LangageSwitcher;
+export default langageSwitcher;
