@@ -12,12 +12,18 @@ const LangageSwitcher = () => {
   }
 
   return (
-    <Box sx={{display:'flex',flexDirection:"row"}}>
-      <IconButton onClick={() => changeLanguage("fr")} >
-           <img src={frIcon} alt="enIcon" style={{ width: '24px', height: '24px' }} fontSize="inherit" />  
-       </IconButton>
-      <IconButton onClick={() => changeLanguage("en")} >
-        <img src={enIcon} alt="enIcon" style={{ width: '24px', height: '24px' }} fontSize="inherit"/>
+    <Box sx={{ display: 'flex', flexDirection: "row" }}>
+      <IconButton 
+        onClick={() => changeLanguage("fr")}
+        style={{ border: i18n.language === 'fr' ? '1px solid white' : 'none' }} 
+      >
+        <img src={frIcon} alt="frIcon" style={{ width: '24px', height: '24px' }} />
+      </IconButton>
+      <IconButton 
+        onClick={() => changeLanguage("en")}
+        style={{ border: i18n.language === 'en' ? '1px solid white' : 'none' }} 
+      >
+        <img src={enIcon} alt="enIcon" style={{ width: '24px', height: '24px' }} />
       </IconButton>
     </Box>
   );
