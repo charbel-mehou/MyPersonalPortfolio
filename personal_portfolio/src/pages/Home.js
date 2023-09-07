@@ -1,15 +1,15 @@
+import { Box } from '@mui/material'
 import React from 'react'
-import {Box} from '@mui/material'
-import ContactsDetails from '../components/ContactsDetails'
+import AboutMe from '../components/AboutMe'
 import ProjectsDetails from '../components/ProjectsDetails'
 import SkillsDetails from '../components/SkillsDetails'
 
 const Home = () => {
   return (
     <Box>
+        <AboutMe/>
         <SkillsDetails/>
         <ProjectsDetails/>
-        <ContactsDetails/>
     </Box>
   )
 }

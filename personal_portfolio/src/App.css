@@ -16,6 +16,14 @@ body {
    border-bottom:2px solid #416DD1;
    padding: 20px;
 }
+.footer{
+    background-color: rgb(0,0,0);
+    gap:  40px ;
+    border-top:2px solid #416DD1;
+    padding: 20px;
+    color: #fff; 
+    margin-top: 20px;
+}
 @media (min-width: 640px) { 
      .navbar {
         gap: 123px;

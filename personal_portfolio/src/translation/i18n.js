@@ -8,6 +8,8 @@ const resources = {
       "skills":"Skills",
       "projects":"Project",
       "contacts":"Contact",
+      "copyright":"© 2023 All rights reserved.",
+      "made-by":"Made by Charbel MEHOU",
     }
   },
   fr: {
@@ -16,6 +18,9 @@ const resources = {
       "skills":"Compétences",
       "projects":"Projets",
       "contacts":"Contacts",
+      "copyright": "© 2023 Tous droits réservés.",
+      "made-by": "Réalisé par Charbel MEHOU",
+
       }
       
   }

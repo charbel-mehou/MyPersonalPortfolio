@@ -1,12 +1,12 @@
+import { Box, Typography } from '@mui/material';
 import React from 'react';
-import { Box, Stack, Button, Typography } from '@mui/material';
+import { useTranslation } from 'react-i18next';
 import CsharpLogo from '../assets/icons/csharp-icon.png';
 import HmtlLogo from '../assets/icons/html-icon.png';
 import JsLogo from '../assets/icons/js-icon.png';
+import PhpLogo from '../assets/icons/php-icon.png';
 import ReactLogo from '../assets/icons/react-icon.png';
 import TypeScriptLogo from '../assets/icons/typescript-icon.png';
-import PhpLogo from '../assets/icons/php-icon.png';
-import { useTranslation } from 'react-i18next';
 
 const SkillsDetails = () => {
   const {t}=useTranslation()
