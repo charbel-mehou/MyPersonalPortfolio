@@ -7,6 +7,8 @@ import JsLogo from '../assets/icons/js-icon.png';
 import PhpLogo from '../assets/icons/php-icon.png';
 import ReactLogo from '../assets/icons/react-icon.png';
 import TypeScriptLogo from '../assets/icons/typescript-icon.png';
+import Java from '../assets/icons/javaicon.png'
+import Sql from '../assets/icons/sql.png'
 
 const SkillsDetails = () => {
   const {t}=useTranslation()
@@ -17,6 +19,9 @@ const SkillsDetails = () => {
     { logo: TypeScriptLogo, label: 'TypeScript' },
     { logo: PhpLogo, label: 'Php' },
     { logo: HmtlLogo, label: 'Html' },
+    {logo:Java,label:'Java'},
+    {logo:Sql,label:'SQL'},
+
   ];
   return (
     <Box 
@@ -34,11 +39,12 @@ const SkillsDetails = () => {
           {skillstab.map((skill, index) => (
             <Box 
             key={index} 
+            className="projectCard-item"
             sx={{ 
               display: 'flex', 
               flexDirection: 'column',
               justifyContent:'center',
-              alignItems:'center',
+              alignItems:'center',gap:1
             }}
             >
                   <img style={{width: "50px", height: "50px" }}src={skill.logo} alt={skill.label} />

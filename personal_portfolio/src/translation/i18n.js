@@ -11,7 +11,8 @@ const resources = {
       "copyright":"© 2023 All rights reserved.",
       "made-by":"Made by Charbel MEHOU",
       "view-here":"View here",
-      "github-view-here":"Github repository here"
+      "github-view-here":"Github repository here",
+      "me-1":""
     }
   },
   fr: {
@@ -23,7 +24,10 @@ const resources = {
       "copyright": "© 2023 Tous droits réservés.",
       "made-by": "Réalisé par Charbel MEHOU",
       "view-here":"Appercu ici",
-      "github-view-here":"Github repository ici "
+      "github-view-here":"Repository Github ici ",
+      "me-1":"Élève-Ingenieur en Ingénierie des Services du Numérique",
+      "me-2":"à la recherche d'un Contrat de professionnalisation",
+      "me-3":"pour un poste de Développeur Full stack" 
       }
       
   }
