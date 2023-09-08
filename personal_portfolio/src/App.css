@@ -8,6 +8,7 @@ body {
         #000000 10px  
     );
     min-height: 100vh;
+    scroll-behavior: smooth;
     }
 
 .navbar {

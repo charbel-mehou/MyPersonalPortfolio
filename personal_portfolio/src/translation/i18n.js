@@ -4,6 +4,7 @@ import { initReactI18next } from "react-i18next";
 const resources = {
   en: {
     translation: {
+      "home":"Home",
       "about":"About",
       "skills":"Skills",
       "projects":"Project",
@@ -12,11 +13,14 @@ const resources = {
       "made-by":"Made by Charbel MEHOU",
       "view-here":"View here",
       "github-view-here":"Github repository here",
-      "me-1":""
+      "me-1": "Student Engineer in Digital Services Engineering",
+      "me-2": "Seeking a Professional Contract",
+      "me-3": "For a Full Stack Developer Position",
     }
   },
   fr: {
     translation: {
+      "Home":"Acceuil",
       "about":"À Propos",
       "skills":"Compétences",
       "projects":"Projets",

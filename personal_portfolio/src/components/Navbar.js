@@ -10,10 +10,10 @@ const Navbar = () => {
     <Box  className="navbar" sx={{display: 'flex', flexDirection: 'row' ,justifyContent: 'space-between'}}>
         <img src={Logo} style={{height:'50px'}}alt="logo"/>
         <Box  sx={{ display: 'flex', flexDirection: 'row', justifyContent:'center',alignItems: 'flex-end',gap:2}} >
-          <Link  to="/" className='link-style'>{t('about')}</Link>
-          <Link to='/aboutMe' className='link-style'>{t('contacts')}</Link>
-          <Link to='/projects' className='link-style'>{t('projects')}</Link>  
-          <Link to='/skills' className='link-style'>{t('skills')}</Link>
+          <a href="/" className='link-style'>{t('home')}</a>
+          <a href='#aboutMe' className='link-style'>{t('about')}</a>
+          <a href='#projects' className='link-style'>{t('projects')}</a>  
+          <a href='#skills' className='link-style'>{t('skills')}</a>
         </Box>
          <Box sx={{ display: 'flex',alignItems: 'flex-end', justifyContent: { xs: 'flex-start', lg: 'flex-end' } }}>
             <LangageSwitcher/>
