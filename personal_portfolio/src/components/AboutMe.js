@@ -1,9 +1,23 @@
 import React from 'react'
-import {Box,Typography} from '@mui/material' 
 import { useTranslation } from 'react-i18next'
 import Me from '../assets/images/me-removebg-preview.png'
+import GitHubIcon from '@mui/icons-material/GitHub'
+import LinkedInIcon from '@mui/icons-material/LinkedIn'
+import MailOutlineIcon from '@mui/icons-material/MailOutline'
+import { Box, Typography } from '@mui/material'
+import Button from '@mui/material/Button'
 const AboutMe = () => {
     const {t}=useTranslation()
+    const handleLInkedLnClick = () => {
+        window.open('https://www.linkedin.com/in/charbel-mehou/', '_blank')
+      }
+      
+      const handleGithubClic=()=>{
+        window.open('https://github.com/CharbelMehou/FitnessApp','_blank')
+      }
+      const handleEmailClick = () => {
+        window.open('mailto:mehoucharbel@gmail.com?subject=Contact depuis le site Web', '_blank');
+      }
   return (
     <Box id='aboutMe'>
        <Box className="title-box">
@@ -11,19 +25,47 @@ const AboutMe = () => {
        </Box>
 
         <Box className="bg-slate-900 bg-opacity-70 about-me-box" sx={{display:'flex',flexDirection:'row',justifyContent:'space-between',alignItems:"center",gap:2}}>
-            <Box className=".about-me-description" style={{color:'white',textAlign:'left'}}>
-               <Typography variant='h5' >{t('me-1')} </Typography> 
-               <Typography variant='h5' > {t('me-2')}</Typography>
-               <Typography variant='h5' >{t('me-3')}</Typography>
+            <Box sx={{display:'flex',flexDirection:'column',gap:2}}>
+
+                <Box className=".about-me-description" style={{color:'white',textAlign:'justify'}}>
+                <Typography variant='h5' >{t('me-1')} </Typography> 
+                <Typography variant='h5' > {t('me-2')}</Typography>
+                <Typography variant='h5' >{t('me-3')}</Typography>
+                </Box>
+            
+                <Box sx={{display:"flex",flexDirection:"row",justifyContent:'center',gap:1}}>
+                    <Button
+                        variant="contained"
+                        onClick={handleLInkedLnClick}
+                        sx={{backgroundColor:"#416DD1"}}
+                        >
+                        <LinkedInIcon />
+                    </Button>
+
+                    <Button
+                        variant="contained"
+                        sx={{backgroundColor:"#416DD1"}}
+                        onClick={handleGithubClic}
+                        >
+                        <GitHubIcon />
+                    </Button>
+                    <Button
+                        variant="contained"
+                        sx={{backgroundColor:"#416DD1"}}
+                        onClick={handleEmailClick}
+                        >
+                        <MailOutlineIcon />   
+                    </Button>
+                </Box>
             </Box>
-            <Box className=".about-me-image" 
-            sx={{display:'flex',
-            justifyContent:{xs:'flex-start',lg:'flex-end'},
-            flexWrap:{xs:'wrap-reverse',lg:'nowrap',
+                <Box className=".about-me-image" 
+                    sx={{display:'flex',
+                    justifyContent:{xs:'flex-start',lg:'flex-end'},
+                    flexWrap:{xs:'wrap-reverse',lg:'nowrap',
                      borderRadius: "25% 10%",
                     border:"3px solid #416DD1"}}}>
-                 <img  src={Me} alt="Me" />
-            </Box>
+                   <img  src={Me} alt="Me" />
+                 </Box>
        </Box>
     </Box>
   )
