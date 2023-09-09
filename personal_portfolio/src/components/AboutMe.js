@@ -34,7 +34,7 @@ const AboutMe = () => {
                 <Box className=".about-me-description" style={{color:'white',textAlign:'justify'}}>
                     <Box sx={{display:'flex',flexDirection:'row',alignItems:'flex-end',gap:2,mb:2}}>
                         <Typography variant='h5' >{t('me-4')} </Typography> 
-                        <Typography variant='h3' sx={{color:'#416DD1'}} > {t('me-5')}</Typography>    
+                        <Typography variant='h3' fontFamily='cursive' sx={{color:'#416DD1'}} > {t('me-5')}</Typography>    
                     </Box>
                     <Typography variant='h5' >{t('me-1')} </Typography> 
                     <Typography variant='h5' > {t('me-2')}<span style={{color:'#416DD1'}}>  {t('me-2-1')}</span></Typography>

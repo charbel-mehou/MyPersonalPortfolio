@@ -7,7 +7,7 @@ const resources = {
       "home":"Home",
       "about":"About",
       "skills":"Skills",
-      "projects":"Project",
+      "projects":"Projects",
       "contacts":"Contact",
       "copyright":"© 2023 All rights reserved.",
       "made-by":"Made by Charbel MEHOU",
@@ -15,13 +15,22 @@ const resources = {
       "github-view-here":"Github repository here",
       "me-1": "Student Engineer in Digital Services Engineering",
       "me-2": "Seeking a Professional Contract",
-      "me-3": "For a Full Stack Developer Position",
+      "me-3": "For a",
+      "me-2-1":"Professional Contract",
+      "me-3-1":"Full Stack Developer Position",
+      "me-4":"Hi! I'm",
+      "me-5":"Charbel MEHOU",
       "projet":"Project",
       "myftjourney-d1": "An application providing advice",
       "myftjourney-d2": "to help users train effectively",
       "myportfolio-d1":"This is my Web portfolio",
-      "web-portfolio":"Web Portfolio"
-      
+      "web-portfolio":"Web Portfolio",
+      "interests":"Interests",
+      'gmail':'Gmail',
+      'github':'Github',
+      'linkedIn':'LinkedIn',
+      "contact-me":"To Reach Me",
+      "certifications":"Certifications"
     }
   },
   fr: {
@@ -35,14 +44,24 @@ const resources = {
       "made-by": "Réalisé par Charbel MEHOU",
       "view-here":"Appercu ici",
       "github-view-here":"Repository Github ici ",
-      "me-1":"Élève-Ingenieur en Ingénierie des Services du Numérique",
-      "me-2":"à la recherche d'un Contrat de professionnalisation",
-      "me-3":"pour un poste de Développeur Full stack" ,
+      "me-1":"Etudiant en Ingénierie des Services du Numérique",
+      "me-2":"à la recherche d'un ",
+      "me-2-1":"Contrat de professionnalisation",
+      "me-3":"pour un poste de" ,
+      "me-3-1":" Développeur Full stack",
+      "me-4":"Bonjour , je m'appelle",
+      "me-5":"Charbel MEHOU",
       "projet":"Projet",
       "myftjourney-d1":"Une application fournissant des conseils",
       "myftjourney-d2":"pour aider les utilisateurs à s'entraîner efficacement",
       "myportfolio-d1":"Il s'agit de mon Web portfolio",
-      "web-portfolio":"Web Portfolio"
+      "web-portfolio":"Web Portfolio",
+      "interests":"Centres d'intérêt",
+      'gmail':'Gmail',
+      'github':'Github',
+      'linkedIn':'LinkedIn',
+      "contact-me":"Pour me contactez",
+      "certifications":"Certifications"
     }
       
   }
