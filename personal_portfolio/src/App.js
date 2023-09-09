@@ -7,8 +7,10 @@ import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import ProjectsDetails from './components/ProjectsDetails'
 import SkillsDetails from './components/SkillsDetails'
-import './translation/i18n'
+import InterestDetails from './components/InterestDetails'
+import CertificationsDetails from './components/CertificationsDetails'
 import Home from './pages/Home'
+import './translation/i18n'
 
 const App=() =>{
     return (
@@ -19,6 +21,8 @@ const App=() =>{
                     <Route path="aboutMe" element ={<AboutMe/>}/>
                     <Route path="skills" element ={<SkillsDetails/>}/>
                     <Route path="projects" element ={<ProjectsDetails/>}/>
+                    <Route path="certifications" element ={<CertificationsDetails/>}/>
+                    <Route path="interests" element={<InterestDetails/>}/>
                 </Routes>
             <Footer/>
          </Box>

@@ -32,18 +32,26 @@ const AboutMe = () => {
             <Box sx={{display:'flex',flexDirection:'column',gap:2}}>
 
                 <Box className=".about-me-description" style={{color:'white',textAlign:'justify'}}>
-                <Typography variant='h5' >{t('me-1')} </Typography> 
-                <Typography variant='h5' > {t('me-2')}</Typography>
-                <Typography variant='h5' >{t('me-3')}</Typography>
+                    <Box sx={{display:'flex',flexDirection:'row',alignItems:'flex-end',gap:2,mb:2}}>
+                        <Typography variant='h5' >{t('me-4')} </Typography> 
+                        <Typography variant='h3' sx={{color:'#416DD1'}} > {t('me-5')}</Typography>    
+                    </Box>
+                    <Typography variant='h5' >{t('me-1')} </Typography> 
+                    <Typography variant='h5' > {t('me-2')}<span style={{color:'#416DD1'}}>  {t('me-2-1')}</span></Typography>
+                    <Typography variant='h5' >{t('me-3')}<span style={{color:'#416DD1'}}>  {t('me-3-1')}</span></Typography>
                 </Box>
             
-                <Box sx={{display:"flex",flexDirection:"row",justifyContent:'center',gap:1}}>
+                <Box sx={{display:"flex",flexDirection:"column",justifyContent:'flex-start',gap:1,mt:1}}>
+                <Typography variant='h5' color='white'>{t('contact-me')}</Typography>
+
+                    <Box sx={{display:"flex",flexDirection:"row",justifyContent:'flex-start',gap:1,mt:1}}>
+
                     <Button
                         variant="contained"
                         onClick={handleLInkedLnClick}
                         sx={{backgroundColor:"#416DD1",gap:1}}
                         >
-                        <LinkedInIcon /> LinkedIn
+                        <LinkedInIcon /> {t('linkedIn')}
                     </Button>
 
                     <Button
@@ -51,14 +59,14 @@ const AboutMe = () => {
                         sx={{backgroundColor:"#416DD1",gap:1}}
                         onClick={handleGithubClic}
                         >
-                        <GitHubIcon /> Github
+                        <GitHubIcon /> {t('github')}
                     </Button>
                     <Button
                         variant="contained"
                         sx={{backgroundColor:"#416DD1",gap:1}}
                         onClick={handleEmailClick}
                         >
-                        <MailOutlineIcon />  Gmail 
+                        <MailOutlineIcon /> {t('gmail')} 
                     </Button>
                     <Button
                         variant="contained"
@@ -68,6 +76,7 @@ const AboutMe = () => {
                         07 58 65 94 51 
                     </Button>
                         
+                            </Box>
                 </Box>
             </Box>
                 <Box className="about-me-image" 

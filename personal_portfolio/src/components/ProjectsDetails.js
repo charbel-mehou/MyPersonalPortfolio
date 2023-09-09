@@ -32,22 +32,6 @@ const ProjectsDetails = () => {
             tags={[{label:"#React"},{label:"#JavaScript"},{label:"#CSS"}]}
 
           />
-           <ProjectCard
-            screen={Logo}
-            vercelLink={" https://myfitjourney-app.vercel.app/"}
-            githubLink={"https://github.com/CharbelMehou/FitnessApp"}
-            descriptions={[{label:"myftjourney-d1"},{label:"myftjourney-d2"}]}
-            tags={[{label:"#React"},{label:"#JavaScript"},{label:"#CSS"}]}
-
-          />
-           <ProjectCard
-            screen={Logo}
-            vercelLink={" https://myfitjourney-app.vercel.app/"}
-            githubLink={"https://github.com/CharbelMehou/FitnessApp"}
-            descriptions={[{label:"myftjourney-d1"},{label:"myftjourney-d2"}]}
-            tags={[{label:"#React"},{label:"#JavaScript"},{label:"#CSS"}]}
-
-          />
        </Box>
     </Box>
   )
