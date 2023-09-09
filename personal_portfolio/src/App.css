@@ -11,10 +11,9 @@ body {
         #000000 10px  
         
         );
-        
+        margin: 0 !important;   
     min-height: 100vh;
-    padding: 0px ;
-    }
+}
     * {
         padding: 0px;
         margin: 0px;
@@ -46,6 +45,11 @@ body {
         gap: 123px;
     }
 }
+@media (min-width: 100px) {
+    .navbar {
+        gap: 123px;
+    }
+}
 .link-style{
     text-decoration: none;
     color: white;
@@ -73,6 +77,7 @@ body {
 .title{
     color:white;
 }
+
 
 .skills-box{
     gap: 30px;

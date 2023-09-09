@@ -30,7 +30,8 @@ const resources = {
       'github':'Github',
       'linkedIn':'LinkedIn',
       "contact-me":"To Reach Me",
-      "certifications":"Certifications"
+      "certifications":"Certifications",
+      "certif-complete":"Course Completion Certificate of "
     }
   },
   fr: {
@@ -42,7 +43,7 @@ const resources = {
       "contacts":"Contacts",
       "copyright": "© 2023 Tous droits réservés.",
       "made-by": "Réalisé par Charbel MEHOU",
-      "view-here":"Appercu ici",
+      "view-here":"Apercu ici",
       "github-view-here":"Repository Github ici ",
       "me-1":"Etudiant en Ingénierie des Services du Numérique",
       "me-2":"à la recherche d'un ",
@@ -61,7 +62,8 @@ const resources = {
       'github':'Github',
       'linkedIn':'LinkedIn',
       "contact-me":"Pour me contactez",
-      "certifications":"Certifications"
+      "certifications":"Certifications",
+      "certif-complete":"Certificat de complétion de cours de",
     }
       
   }
