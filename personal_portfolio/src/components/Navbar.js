@@ -9,7 +9,6 @@ const Navbar = () => {
     <Box  className="navbar" sx={{display: 'flex', flexDirection: 'row' ,justifyContent: 'space-between',width:{xs:'50/%',lg:'100%'}}}>
         <img src={Logo} style={{height:'50px'}}alt="logo"/>
         <Box  sx={{ display: 'flex', flexDirection: 'row', justifyContent:'center',alignItems: 'flex-end',gap:2,fontSize:'20px'}} >
-          <a href="/" className='link-style'>{t('home')}</a>
           <a href='#aboutMe' className='link-style'>{t('about')}</a>
           <a href='#projects' className='link-style'>{t('projects')}</a>  
           <a href='#skills' className='link-style'>{t('skills')}</a>
