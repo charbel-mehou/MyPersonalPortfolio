@@ -9,7 +9,7 @@ const ProjectsDetails = () => {
 
   const {t}=useTranslation()
   return (
-    <Box id='projects'>
+    <Box id='projects'sx={{mt:2}}>
        <Box className="title-box">
          <Typography variant='h5' className='title'> {t('projects')}</Typography>
        </Box>

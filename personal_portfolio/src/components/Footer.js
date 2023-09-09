@@ -6,17 +6,12 @@ import { useTranslation } from 'react-i18next'
 const Footer = () => {
   const {t} =useTranslation()
   return(
-  <Box className="footer">
-    
+  <Box className="footer" sx={{width:{xs:'50/%',lg:'100%'}}}>   
     <Box sx={{display:"flex",flexDirection:"column",gap:1,pb:2}}>
-
-    <Typography variant="h6" textAlign="center" >{t('made-by')}</Typography>
-    
-    <Typography variant="h6" textAlign="center" >
-    {t('copyright')} 
-    </Typography>
-
-
+      <Typography variant="h6" textAlign="center" >{t('made-by')}</Typography>     
+      <Typography variant="h6" textAlign="center" >
+        {t('copyright')} 
+      </Typography>
     </Box>
   </Box>
 )

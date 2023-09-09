@@ -26,7 +26,7 @@ const resources = {
   },
   fr: {
     translation: {
-      "Home":"Acceuil",
+      "home":"Acceuil",
       "about":"À Propos",
       "skills":"Compétences",
       "projects":"Projets",
