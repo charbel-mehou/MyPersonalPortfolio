@@ -24,6 +24,7 @@ const resources = {
       "myftjourney-d1": "An application providing advice",
       "myftjourney-d2": "to help users train effectively",
       "myportfolio-d1":"This is my Web portfolio",
+      "myportfolio-d2":"Here you can have acces to my deployed projects",
       "web-portfolio":"Web Portfolio",
       "interests":"Interests",
       'gmail':'Gmail',
@@ -31,7 +32,9 @@ const resources = {
       'linkedIn':'LinkedIn',
       "contact-me":"To Reach Me",
       "certifications":"Certifications",
-      "certif-complete":"Course Completion Certificate of "
+      "certif-complete":"Course Completion Certificate of ",
+      "myftjourney":'Gym Training Plateform'
+
     }
   },
   fr: {
@@ -55,7 +58,8 @@ const resources = {
       "projet":"Projet",
       "myftjourney-d1":"Une application fournissant des conseils",
       "myftjourney-d2":"pour aider les utilisateurs à s'entraîner efficacement",
-      "myportfolio-d1":"Il s'agit de mon Web portfolio",
+      "myportfolio-d1":"Il s'agit de mon Web portfolio ",
+      "myportfolio-d2":"Où vous pouvez avoir accès à mes projets déployés",
       "web-portfolio":"Web Portfolio",
       "interests":"Centres d'intérêt",
       'gmail':'Gmail',
@@ -64,6 +68,8 @@ const resources = {
       "contact-me":"Pour me contactez",
       "certifications":"Certifications",
       "certif-complete":"Certificat de complétion de cours de",
+      "myftjourney":'PlateForme d\'aide à l\'entrainement'
+
     }
       
   }

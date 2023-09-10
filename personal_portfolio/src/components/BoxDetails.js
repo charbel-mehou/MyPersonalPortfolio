@@ -5,8 +5,9 @@ const BoxDetails = ({ id, title, children }) => {
   const { t } = useTranslation();
 
   return (
-    <Box id={id} sx={{ display: "flex", flexDirection: "column", mt: 2 }}>
-      <Box className="title-box">
+    <Box className="section-offset" id={id} sx={{ display: "flex", flexDirection: "column", mt: 2 }}>
+      
+      <Box className="title-box"sx={{py:1}}>
         <Typography variant="h5" className="title">
           {" "}
           {t(title)}
@@ -14,7 +15,7 @@ const BoxDetails = ({ id, title, children }) => {
       </Box>
 
       <Box
-        className="bg-slate-900 bg-opacity-70"
+        className="bg-slate-900 bg-opacity-70 title-box"
         sx={{
           display: "flex",
           flexDirection: "row",

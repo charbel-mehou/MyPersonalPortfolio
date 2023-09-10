@@ -23,8 +23,8 @@ const AboutMe = () => {
     );
   };
   return (
-    <Box id="aboutMe">
-      <Box className="title-box">
+    <Box className="section-offset" id="aboutMe">
+      <Box className="title-box" sx={{py:1}}>
         <Typography variant="h5" className="title">
           {" "}
           {t("about")}
@@ -32,7 +32,7 @@ const AboutMe = () => {
       </Box>
 
       <Box
-        className="bg-slate-900 bg-opacity-70 about-me-box"
+        className="bg-slate-900 bg-opacity-70 about-me-box title-box"
         sx={{
           display: "flex",
           flexDirection: "row",

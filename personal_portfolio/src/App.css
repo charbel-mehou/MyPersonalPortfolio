@@ -69,8 +69,8 @@ body {
     background-color: rgb(30 41 59);
 }
 .title-box{
-    border-bottom:10px solid #416DD1;
     margin-bottom: 12px;
+    border-bottom:10px solid #416DD1;
 }
 
 .title{
@@ -118,6 +118,9 @@ body {
         width: 400px;
         height: 200px;
       }
+      .certifCard{
+        width: 75%;
+    }
   }
   
 
@@ -133,7 +136,7 @@ body {
 .certifCard{
     border-radius: 20px;
     padding:30px;
-   width: auto;
+    width: auto;
     background-color: #0b1f43;
     transition:  0.3s ease-in-out
 }
@@ -148,3 +151,12 @@ body {
 .interest-box:hover{
     transform: scale(1.25);
 }
+/* Ajoutez cette classe aux sections cibles */
+.section-offset::before {
+        display: block;
+        height: 150px; /* hauteur de la navbar + marge */
+        margin-top: -150px; /* hauteur négative pour l'alignement */
+        visibility: hidden;   
+          
+  }
+  

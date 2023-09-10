@@ -17,7 +17,7 @@ const intereststab = [
 const InterestDetails = () => {
   const { t } = useTranslation();
   return (
-    <BoxDetails id={"interests"} title={"interests"}>
+    <BoxDetails className="section-offset" id={"interests"} title={"interests"}>
       {intereststab?.map((skill, index) => (
         <Box
           key={index}

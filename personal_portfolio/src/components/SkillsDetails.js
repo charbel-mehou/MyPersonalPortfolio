@@ -26,7 +26,7 @@ const SkillsDetails = () => {
     { logo: Sql, label: "SQL" },
   ];
   return (
-    <BoxDetails id={"skills"} title={"skills"}>
+    <BoxDetails className="section-offset" id={"skills"} title={"skills"}>
       {skillstab.map((skill, index) => (
         <Box
           key={index}

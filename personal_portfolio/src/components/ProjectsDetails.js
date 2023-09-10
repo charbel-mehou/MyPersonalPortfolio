@@ -9,9 +9,9 @@ import BoxDetails from "./BoxDetails";
 const ProjectsDetails = () => {
   const { t } = useTranslation();
   return (
-    <BoxDetails id={"projects"} title={"projects"}>
+    <BoxDetails className="section-offset" id={"projects"} title={"projects"}>
       <ProjectCard
-        title={"projet"}
+        title={"myftjourney"}
         screen={Project1}
         vercelLink={" https://myfitjourney-app.vercel.app/"}
         githubLink={"https://github.com/CharbelMehou/FitnessApp"}
@@ -30,7 +30,7 @@ const ProjectsDetails = () => {
         screen={Project2}
         vercelLink={"https://my-personal-portfolio-lyart.vercel.app/"}
         githubLink={"https://github.com/CharbelMehou/MyPersonalPortfolio"}
-        descriptions={[{ label: "myportfolio-d1" }]}
+        descriptions={[{ label: "myportfolio-d1" },{ label: "myportfolio-d2" }]}
         tags={[
           { label: "#React" },
           { label: "#JavaScript" },
