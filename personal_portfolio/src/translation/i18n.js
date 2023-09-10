@@ -14,7 +14,7 @@ const resources = {
       "view-here":"View here",
       "github-view-here":"Github repository here",
       "me-1": "Student Engineer in Digital Services Engineering",
-      "me-2": "Seeking a Professional Contract",
+      "me-2": "Seeking a",
       "me-3": "For a",
       "me-2-1":"Professional Contract",
       "me-3-1":"Full Stack Developer Position",
