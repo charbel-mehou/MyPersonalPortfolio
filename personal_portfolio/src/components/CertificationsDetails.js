@@ -12,7 +12,7 @@ const CertificationsDetails = () => {
   const { t } = useTranslation();
   return (
     <BoxDetails id="certifications" title="certifications">
-      <Box sx={{ display: "flex", flexDirection: "row", gap: 2, p: 2 }}>
+      <Box sx={{ display: "flex", flexDirection: "row",flexWrap:{xs:'wrap',lg:'nowrap'}, gap: 2 ,flexShrink: 1}}>
         {certifstab?.map((certif, index) => (
           <Box
             className="certifCard"
@@ -21,7 +21,7 @@ const CertificationsDetails = () => {
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
-              gap: 2,
+              gap: 2,flexShrink: 1,
             }}
           >
             <img

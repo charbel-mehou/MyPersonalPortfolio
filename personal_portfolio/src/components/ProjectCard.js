@@ -11,7 +11,7 @@ const ProjectCard = ({
   descriptions,
   tags,
 }) => {
-  const flexWrapValue = tags?.length > 3 ? "wrap" : "nowrap";
+  const flexWrapValue = tags?.length > 2 ? "wrap" : "nowrap";
   const { t } = useTranslation();
   const handleVercelClick = () => {
     window.open(vercelLink, "_blank");
@@ -22,17 +22,17 @@ const ProjectCard = ({
   return (
     <Box
       className="projectCard"
-      sx={{ display: "flex", flexDirection: "column" }}
+      sx={{ display: "flex", flexDirection: "column", flexShrink: 1}}
     >
       <Box sx={{ mb: 1 }}>
         <Typography style={{ color: "white" }}>{t(title)}</Typography>
       </Box>
 
-      <Box sx={{ borderRadius: "2px solid #416DD1" }}>
+      <Box sx={{ display: "flex", height: "auto", width: "auto", flexShrink: 1 }}>
         <img className="screen-project-image" src={screen} alt="image" />
       </Box>
 
-      <Box sx={{ display: "flex", flexDirection: "column", gap: 1, p: 1 }}>
+      <Box sx={{ display: "flex", flexDirection: "column", flexShrink: 1, gap: 1, p: 1 }}>
         {descriptions?.map((description, index) => (
           <Typography key={index} style={{ color: "white" }}>
             {t(description.label)}
@@ -42,7 +42,12 @@ const ProjectCard = ({
           variant="contained"
           onClick={handleVercelClick}
           size="small"
-          sx={{ backgroundColor: "#416DD1", gap: 1 }}
+          sx={{
+            backgroundColor: "#416DD1",
+            gap: 1,
+            width: { xs: "auto", lg: "100%" },
+            height: { xs: "auto", lg: "100%" },
+          }}
         >
           {t("view-here")}
           <LaunchIcon />
@@ -51,7 +56,12 @@ const ProjectCard = ({
           variant="contained"
           size="small"
           onClick={handleGithubClick}
-          sx={{ backgroundColor: "#416DD1", gap: 1 }}
+          sx={{
+            backgroundColor: "#416DD1",
+            gap: 1,
+            width: { xs: "auto", lg: "100%" },
+            height: { xs: "auto", lg: "100%" },
+          }}
         >
           {t("github-view-here")}
           <LaunchIcon />
@@ -62,6 +72,8 @@ const ProjectCard = ({
             flexDirection: "row",
             gap: 1,
             flexWrap: flexWrapValue,
+            width: { xs: "auto", lg: "100%" },
+            height: { xs: "auto", lg: "100%" },
           }}
         >
           {tags?.map((tag, index) => (

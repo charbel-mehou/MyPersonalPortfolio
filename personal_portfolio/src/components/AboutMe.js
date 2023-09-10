@@ -38,20 +38,19 @@ const AboutMe = () => {
           flexDirection: "row",
           justifyContent: "space-between",
           alignItems: "center",
-          gap: 2,
+          gap: 2,mx: "12px",
+          width: "auto" ,
           flexWrap: { xs: "wrap-reverse", lg: "nowrap" },
         }}
       >
         <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
-          <Box
-            className=".about-me-description"
-            style={{ color: "white", textAlign: "justify" }}
-          >
+          <Box className=".about-me-description" style={{ color: "white" }}>
             <Box
               sx={{
                 display: "flex",
                 flexDirection: "row",
                 alignItems: "flex-end",
+                flexWrap: { xs: "wrap", lg: "nowrap" },
                 gap: 2,
                 mb: 2,
               }}
@@ -97,6 +96,7 @@ const AboutMe = () => {
                 flexDirection: "row",
                 justifyContent: "flex-start",
                 gap: 1,
+                flexWrap: { xs: "wrap", lg: "nowrap" },
                 mt: 1,
               }}
             >
@@ -136,19 +136,15 @@ const AboutMe = () => {
           className="about-me-image"
           sx={{
             display: "flex",
-            justifyContent: { xs: "flex-start", lg: "flex-end" },
+            justifyContent: "center",
+            alignContent: { xs: "center", lg: "flex-end" },
             borderRadius: "25% 10%",
+            width: { xs: "200px", lg: "400px" },
+            height: { xs: "200px", lg: "400px" },
             border: "3px solid #416DD1",
           }}
         >
-          <img
-            sx={{
-              width: { xs: "50px", lg: "100px" },
-              height: { xs: "50px", lg: "100px" },
-            }}
-            src={Me}
-            alt="Me"
-          />
+          <img src={Me} alt="Me" />
         </Box>
       </Box>
     </Box>

@@ -21,12 +21,13 @@ const InterestDetails = () => {
       {intereststab?.map((skill, index) => (
         <Box
           key={index}
+          className='interest-box'
           sx={{
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
-            gap: 1,
+            gap: 2
           }}
         >
           <img

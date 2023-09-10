@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material";
-import React, { Children } from "react";
+import React from "react";
 import { useTranslation } from "react-i18next";
 const BoxDetails = ({ id, title, children }) => {
   const { t } = useTranslation();
@@ -19,8 +19,8 @@ const BoxDetails = ({ id, title, children }) => {
           display: "flex",
           flexDirection: "row",
           alignItems: "center",
-          p: 2,
-          mx: "12PX",
+          p: 2,borderRadius:'10px',
+          mx: "12px",width:'auto',
           gap: 2,
           flexWrap: { xs: "wrap", lg: "nowrap" },
         }}

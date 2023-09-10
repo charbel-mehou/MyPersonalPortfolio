@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  
 }
 body {
     font-family: 'Open Sans';
@@ -11,14 +12,16 @@ body {
         #000000 10px  
         
         );
-        margin: 0 !important;   
-    min-height: 100vh;
+        min-height: 100vh;
 }
     * {
         padding: 0px;
         margin: 0px;
         box-sizing: border-box;
       
+      }
+      ::-webkit-scrollbar {
+        width: 0px;
       }
       
       .navbar {
@@ -30,8 +33,8 @@ body {
         border-bottom:2px solid #416DD1;
         padding: 20px;
         margin-bottom: 20px;
-        width: 100%;
-    }
+        width: 100% !important;
+        }
 .footer{
     background-color: rgb(0,0,0);
     gap:  40px ;
@@ -40,16 +43,12 @@ body {
     color: #fff; 
     margin-top: 20px;
 }
-@media (min-width: 640px) { 
+@media (min-width: 576px) { 
      .navbar {
         gap: 123px;
     }
 }
-@media (min-width: 100px) {
-    .navbar {
-        gap: 123px;
-    }
-}
+
 .link-style{
     text-decoration: none;
     color: white;
@@ -70,10 +69,10 @@ body {
     background-color: rgb(30 41 59);
 }
 .title-box{
-    border-bottom:2px solid #416DD1;
+    border-bottom:10px solid #416DD1;
     margin-bottom: 12px;
-    
 }
+
 .title{
     color:white;
 }
@@ -91,11 +90,11 @@ body {
 .projectCard{
     border-radius: 20px;
     padding:30px;
-    min-height: 400px;
-    min-width:400px;
+    width: auto;
     background-color: #0b1f43;
     transition:  0.3s ease-in-out
 }
+
 .projectCard-item{
     transition:  0.3s ease-in-out
 }
@@ -105,10 +104,23 @@ body {
 .projectCard:hover {
     transform: scale(1.05);
 }
-.screen-project-image{
-    height: 200px;
-    width: 400px;
-}
+.screen-project-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  @media (min-width: 992px) { 
+    .screen-project-image  {
+      width: 400px;
+      height: 200px;
+    }
+    .certifCard-img {
+        width: 400px;
+        height: 200px;
+      }
+  }
+  
+
 .about-me-box{
     padding: 20px ;
     border-radius:10px;
@@ -121,15 +133,18 @@ body {
 .certifCard{
     border-radius: 20px;
     padding:30px;
-    min-height: 400px;
-    min-width:400px;
+   width: auto;
     background-color: #0b1f43;
     transition:  0.3s ease-in-out
 }
 .certifCard-img{
-    height: 300px;
-    width: 400px;
+    width: 100%;
+    height: auto;
 }
 .certifCard-img:hover{
+    transform: scale(1.25);
+}
+
+.interest-box:hover{
     transform: scale(1.25);
 }
