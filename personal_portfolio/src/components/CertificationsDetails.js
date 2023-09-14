@@ -8,13 +8,13 @@ import { useTranslation } from "react-i18next";
 const certifstab = [
   { logo: ReactCertif, label: "React.js" },
   { logo: JavaScript, label: "Javascript" },
-  { logo: Csharp, label: "C#" },
+  { logo: Csharp, label: "C#" }
 ];
 const CertificationsDetails = () => {
   const { t } = useTranslation();
   return (
     <BoxDetails className="section-offset" id="certifications" title="certifications">
-      <Box sx={{ display: "flex", flexDirection: "row",flexWrap:{xs:'wrap',lg:'nowrap'}, gap: 2 ,flexShrink: 1,width:{xs:'100%',lg:'68%'}}}>
+      <Box sx={{ display: "flex", flexDirection: "row",flexWrap:{xs:'wrap',lg:'nowrap'}, flexGrow:1,gap: 2 ,width:{xs:'100%',lg:'auto'}}}>
         {certifstab?.map((certif, index) => (
           <Box
             className="certifCard"
@@ -23,7 +23,7 @@ const CertificationsDetails = () => {
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
-              gap: 2,flexShrink: 1,
+              gap: 2
             }}
           >
             <img

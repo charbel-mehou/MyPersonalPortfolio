@@ -7,6 +7,7 @@ import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import PhoneIcon from "@mui/icons-material/Phone";
 import { Box, Typography } from "@mui/material";
 import Button from "@mui/material/Button";
+import TitleHeader from "./TitleHeader";
 const AboutMe = () => {
   const { t } = useTranslation();
   const handleLInkedLnClick = () => {
@@ -39,33 +40,18 @@ const AboutMe = () => {
           justifyContent: "space-between",
           alignItems: "center",
           gap: 2,mx: "12px",
-          width: "auto" ,
+          width: "auto" ,overflow:'hidden',
           flexWrap: { xs: "wrap-reverse", lg: "nowrap" },
         }}
       >
         <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
           <Box className=".about-me-description" style={{ color: "white" }}>
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "row",
-                alignItems: "flex-end",
-                flexWrap: { xs: "wrap", lg: "nowrap" },
-                gap: 2,
-                mb: 2,
-              }}
-            >
-              <Typography variant="h5">{t("me-4")} </Typography>
-              <Typography
-                variant="h3"
-                fontFamily="cursive"
-                sx={{ color: "#416DD1" }}
-              >
-                {" "}
-                {t("me-5")}
-              </Typography>
-            </Box>
+           <TitleHeader/>
+           <Typography variant="h5">{t("welcome")} </Typography>
             <Typography variant="h5">{t("me-1")} </Typography>
+            <Typography variant="h5">{t("me-1-1")} <span style={{ color: "#416DD1" }}> {t("programming")}</span>
+            {t("eager")}<span style={{ color: "#416DD1" }}> {t("digital-innovation")}</span> </Typography>
+            
             <Typography variant="h5">
               {" "}
               {t("me-2")}
