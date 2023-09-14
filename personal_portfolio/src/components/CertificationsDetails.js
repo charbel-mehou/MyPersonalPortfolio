@@ -3,10 +3,12 @@ import BoxDetails from "./BoxDetails";
 import { Box, Typography } from "@mui/material";
 import ReactCertif from "../assets/images/ReactCertif.png";
 import JavaScript from "../assets/images/JavascriptCertif.png";
+import Csharp from "../assets/images/CsharpCertif.png"
 import { useTranslation } from "react-i18next";
 const certifstab = [
   { logo: ReactCertif, label: "React.js" },
   { logo: JavaScript, label: "Javascript" },
+  { logo: Csharp, label: "C#" },
 ];
 const CertificationsDetails = () => {
   const { t } = useTranslation();

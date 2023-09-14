@@ -1,11 +1,9 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
-import ProjectCard from "./ProjectCard";
-import Logo from "../assets/images/Logo.png";
 import Project1 from "../assets/images/project1Screen.png";
 import Project2 from "../assets/images/project2Screen.png";
 import BoxDetails from "./BoxDetails";
+import ProjectCard from "./ProjectCard";
 const ProjectsDetails = () => {
   const { t } = useTranslation();
   return (
