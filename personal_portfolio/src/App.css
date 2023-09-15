@@ -48,10 +48,7 @@ body {
      .navbar {
         gap: 123px;
     }
-    .section-box{
-        height: auto;
-        width: auto;
-    }
+    
 }
 
 .link-style{
@@ -77,8 +74,9 @@ body {
     margin-bottom: 12px;
     border-bottom:10px solid #416DD1;
 }
+
 .section-box{
-    height: 500px;
+   min-height: 500px;
     width: auto;
 }
 
@@ -103,7 +101,9 @@ body {
     background-color: #0b1f43;
     transition:  0.3s ease-in-out
 }
-
+.skill-item{
+    border-radius:10px; 
+}
 .projectCard-item{
     transition:  0.3s ease-in-out
 }
