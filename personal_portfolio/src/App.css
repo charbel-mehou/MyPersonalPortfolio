@@ -33,6 +33,7 @@ body {
         border-bottom:2px solid #416DD1;
         padding: 20px;
         margin-bottom: 20px;
+        height: 91px !important;
         width: 100% !important;
         }
 .footer{
@@ -46,6 +47,10 @@ body {
 @media (min-width: 576px) { 
      .navbar {
         gap: 123px;
+    }
+    .section-box{
+        height: auto;
+        width: auto;
     }
 }
 
@@ -72,6 +77,10 @@ body {
     margin-bottom: 12px;
     border-bottom:10px solid #416DD1;
 }
+.section-box{
+    height: 500px;
+    width: auto;
+}
 
 .title{
     color:white;
@@ -84,9 +93,9 @@ body {
     padding: 20px ;
     border-radius:10px; 
 }
-.skill-box:hover{
+/* .skill-box:hover{
     transform: scale(1.05);
-}
+} */
 .projectCard{
     border-radius: 20px;
     padding:30px;
@@ -101,9 +110,9 @@ body {
 .projectCard-item:hover {
     transform: scale(1.25);
 }
-.projectCard:hover {
+/* .projectCard:hover {
     transform: scale(1.05);
-}
+} */
 .screen-project-image {
     width: 100%;
     height: auto;
@@ -189,6 +198,13 @@ body {
     100% {
       left: 0%;
     }
+  }
+  .section-offset::before {
+    display: block;
+    height: 350px;
+    margin-top: -250px;
+    visibility: hidden;
+    content: "";
   }
   
   

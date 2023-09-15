@@ -24,7 +24,7 @@ const AboutMe = () => {
     );
   };
   return (
-    <Box className="section-offset" id="aboutMe">
+    <Box  id="aboutMe">
       <Box className="title-box" sx={{py:1}}>
         <Typography variant="h5" className="title">
           {" "}
@@ -33,7 +33,7 @@ const AboutMe = () => {
       </Box>
 
       <Box
-        className="bg-slate-900 bg-opacity-70 about-me-box title-box"
+        className="bg-slate-900 bg-opacity-70 about-me-box title-box section-box"
         sx={{
           display: "flex",
           flexDirection: "row",
@@ -45,21 +45,24 @@ const AboutMe = () => {
         }}
       >
         <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
-          <Box className=".about-me-description" style={{ color: "white" }}>
+          <Box className=".about-me-description"  style={{ color: "white"}}>
            <TitleHeader/>
            <Typography variant="h5">{t("welcome")} </Typography>
             <Typography variant="h5">{t("me-1")} </Typography>
             <Typography variant="h5">{t("me-1-1")} <span style={{ color: "#416DD1" }}> {t("programming")}</span>
-            {t("eager")}<span style={{ color: "#416DD1" }}> {t("digital-innovation")}</span> </Typography>
+            {t("eager")}<span style={{ color: "#416DD1" }}> {t("digital-innovation")}</span>. </Typography>
             
             <Typography variant="h5">
               {" "}
               {t("me-2")}
-              <span style={{ color: "#416DD1" }}> {t("me-2-1")}</span>
+              <span style={{ color: "#416DD1" }}> {t("me-2-1")}</span>,
+              {t("me-3")}
             </Typography>
             <Typography variant="h5">
-              {t("me-3")}
-              <span style={{ color: "#416DD1" }}> {t("me-3-1")}</span>
+            {t("me-3-1")}
+              <span style={{ color: "#416DD1" }}>  HTML,CSS<br/></span>
+              <span style={{ color: "#416DD1" }}>JavaScript,React </span>
+              {t('and')}<span style={{ color: "#416DD1" }}> C# </span>
             </Typography>
           </Box>
 

@@ -1,20 +1,34 @@
+import { Box, Typography,Button } from "@mui/material";
+import LaunchIcon from "@mui/icons-material/Launch";
 import React from "react";
-import BoxDetails from "./BoxDetails";
-import { Box, Typography } from "@mui/material";
-import ReactCertif from "../assets/images/ReactCertif.png";
-import JavaScript from "../assets/images/JavascriptCertif.png";
-import Csharp from "../assets/images/CsharpCertif.png"
 import { useTranslation } from "react-i18next";
+import Csharp from "../assets/images/CsharpCertif.png";
+import JavaScript from "../assets/images/JavascriptCertif.png";
+import ReactCertif from "../assets/images/ReactCertif.png";
+import BoxDetails from "./BoxDetails";
 const certifstab = [
-  { logo: ReactCertif, label: "React.js" },
-  { logo: JavaScript, label: "Javascript" },
-  { logo: Csharp, label: "C#" }
+  { logo: ReactCertif, label: "React.js" ,link:'https://urlz.fr/nC41'},
+  { logo: JavaScript, label: "Javascript",link:'https://urlz.fr/nC3C' },
+  { logo: Csharp, label: "C#",link:'https://urlz.fr/nC3v'},
 ];
 const CertificationsDetails = () => {
   const { t } = useTranslation();
   return (
-    <BoxDetails className="section-offset" id="certifications" title="certifications">
-      <Box sx={{ display: "flex", flexDirection: "row",flexWrap:{xs:'wrap',lg:'nowrap'}, flexGrow:1,gap: 2 ,width:{xs:'100%',lg:'auto'}}}>
+    <BoxDetails
+      className="section-offset"
+      id="certifications"
+      title="certifications"
+    >
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "row",
+          flexWrap: { xs: "wrap", lg: "nowrap" },
+          flexGrow: 1,
+          gap: 2,
+          width: { xs: "100%", lg: "auto" },
+        }}
+      >
         {certifstab?.map((certif, index) => (
           <Box
             className="certifCard"
@@ -23,7 +37,7 @@ const CertificationsDetails = () => {
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
-              gap: 2
+              gap: 2,
             }}
           >
             <img
@@ -35,6 +49,20 @@ const CertificationsDetails = () => {
               {" "}
               {t("certif-complete")} {t(certif.label)}
             </Typography>
+            <Button
+              variant="contained"
+              onClick={() => window.open(certif.link, "_blank")}
+              size="small"
+              sx={{
+                backgroundColor: "#416DD1",
+                gap: 1,
+                width: { xs: "auto", lg: "100%" },
+                height: { xs: "auto", lg: "100%" },
+              }}
+            >
+              {t("view-here")}
+              <LaunchIcon />
+            </Button>
           </Box>
         ))}
       </Box>
