@@ -16,13 +16,13 @@ const resources = {
       "welcome":'Welcome on my Web portfolio  ! ',
       "me-1": "I'm a Student Engineer in Digital Services Engineering",
       "me-1-1":"passionate about ", 
-      "eager":", eager for",
+      "eager":"and eager for",
       "programming":"programming",
       "digital-innovation":"digital innovation",
-      "me-2": "Seeking a",
-      "me-3": "For a",
-      "me-2-1":"Professional Contract",
-      "me-3-1":"Full Stack Developer Position",
+      "me-2": "Specialized in",
+"me-2-1": "full-stack development",
+"me-3": "my skill set",
+"me-3-1": "ranges from front-end to back-end, with expertise in",
       "me-4":"Hi ! I'm",
       "me-5":"Charbel MEHOU",
       "me-5-1":"a Developper",
@@ -39,7 +39,8 @@ const resources = {
       "contact-me":"To Reach Me",
       "certifications":"Certifications",
       "certif-complete":"Course Completion Certificate of ",
-      "myftjourney":'Gym Training Plateform'
+      "myftjourney":'Gym Training Plateform',
+      "and":"and"
 
     }
   },
@@ -52,17 +53,17 @@ const resources = {
       "contacts":"Contacts",
       "copyright": "© 2023 Tous droits réservés.",
       "made-by": "Réalisé par Charbel MEHOU",
-      "view-here":"Apercu ici",
+      "view-here":"Aperçu ici",
       "github-view-here":"Repository Github ici ",
       "me-1":"Je suis un etudiant en Ingénierie des Services du Numérique",
       "me-1-1": "passionné de ",
-      "eager":",avide d'",
+      "eager":"et avide d'",
       "programming": "programmation",
       "digital-innovation": "Innovation numérique",  
-      "me-2":"à la recherche d'un ",
-      "me-2-1":"Contrat de professionnalisation",
-      "me-3":"pour un poste de" ,
-      "me-3-1":" Développeur Full stack",
+      "me-2":"Spécialisé en  ",
+      "me-2-1":"développement full-stack",
+      "me-3":" ma palette de compétences " ,
+      "me-3-1":"s'étend du front-end au back-end, avec une expertise en",
       "me-4":"Bonjour , je suis",
       "me-5":"Charbel MEHOU",
       "me-5-1":" Développeur",
@@ -80,8 +81,8 @@ const resources = {
       "contact-me":"Pour me contactez",
       "certifications":"Certifications",
       "certif-complete":"Certificat de complétion de cours de",
-      "myftjourney":'PlateForme d\'aide à l\'entrainement'
-
+      "myftjourney":'PlateForme d\'aide à l\'entrainement',
+      "and":'et'
     }
       
   }
