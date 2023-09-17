@@ -25,7 +25,7 @@ const AboutMe = () => {
   };
   return (
     <Box  id="aboutMe">
-      <Box className="title-box" sx={{py:1}}>
+      <Box className="title-box section-offset" sx={{py:1}}>
         <Typography variant="h5" className="title">
           {" "}
           {t("about")}
