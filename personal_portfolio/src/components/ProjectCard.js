@@ -78,16 +78,10 @@ const ProjectCard = ({
         >
           {tags?.map((tag, index) => (
             <Button
+              className="button-tag"
               key={index}
               variant="contained"
-              size="small"
-              onClick={handleGithubClick}
-              sx={{
-                backgroundColor: "yellow",
-                color: "black",
-                borderRadius: "20px",
-                fontWeight: "bold",
-              }}
+              size="small"            
             >
               {t(tag.label)}
             </Button>

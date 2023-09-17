@@ -33,6 +33,7 @@ body {
         border-bottom:2px solid #416DD1;
         padding: 20px;
         margin-bottom: 20px;
+        height: 91px !important;
         width: 100% !important;
         }
 .footer{
@@ -47,6 +48,7 @@ body {
      .navbar {
         gap: 123px;
     }
+    
 }
 
 .link-style{
@@ -73,6 +75,11 @@ body {
     border-bottom:10px solid #416DD1;
 }
 
+.section-box{
+   min-height: 500px;
+    width: auto;
+}
+
 .title{
     color:white;
 }
@@ -84,8 +91,18 @@ body {
     padding: 20px ;
     border-radius:10px; 
 }
-.skill-box:hover{
+/* .skill-box:hover{
     transform: scale(1.05);
+} */
+.MuiButton-root.button-tag{
+    background-color: yellow;
+    color: black;
+    border-radius: 20px;
+    font-weight: bold;
+}
+.MuiButton-root.button-tag:hover{
+    background-color: yellow;
+    color: black;
 }
 .projectCard{
     border-radius: 20px;
@@ -94,16 +111,18 @@ body {
     background-color: #0b1f43;
     transition:  0.3s ease-in-out
 }
-
+.skill-item{
+    border-radius:10px; 
+}
 .projectCard-item{
     transition:  0.3s ease-in-out
 }
 .projectCard-item:hover {
     transform: scale(1.25);
 }
-.projectCard:hover {
+/* .projectCard:hover {
     transform: scale(1.05);
-}
+} */
 .screen-project-image {
     width: 100%;
     height: auto;
@@ -152,13 +171,8 @@ body {
 .interest-box:hover{
     transform: scale(1.25);
 }
-.section-offset::before {
-        display: block;
-        height: 150px; /* hauteur de la navbar + marge */
-        margin-top: -150px; /* hauteur négative pour l'alignement */
-        visibility: hidden;   
-          
-  }
+
+
   .text {
     position: relative;
     color: #4070F4;
@@ -189,6 +203,13 @@ body {
     100% {
       left: 0%;
     }
+  }
+  .section-offset::before {
+    display: block;
+    height: 350px;
+    margin-top: -250px;
+    visibility: hidden;
+    content: "";
   }
   
   
