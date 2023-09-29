@@ -33,9 +33,10 @@ body {
         border-bottom:2px solid #416DD1;
         padding: 20px;
         margin-bottom: 20px;
-        height: 91px !important;
+        height: 60px !important;
         width: 100% !important;
         }
+        
 .footer{
     background-color: rgb(0,0,0);
     gap:  40px ;
@@ -48,12 +49,18 @@ body {
      .navbar {
         gap: 123px;
     }
-    
+    .section-box2{
+      max-height: 100vh;
+       width: auto;
+    }
 }
 
 .link-style{
     text-decoration: none;
     color: white;
+}
+.link-style:hover{
+  color: #4070F4;
 }
 .skills-button-style {
     background-color: #FCC757;
@@ -80,6 +87,10 @@ body {
     width: auto;
 }
 
+.section-box2{
+  max-height: 500px;
+   width: auto;
+}
 .title{
     color:white;
 }
@@ -91,9 +102,7 @@ body {
     padding: 20px ;
     border-radius:10px; 
 }
-/* .skill-box:hover{
-    transform: scale(1.05);
-} */
+
 .MuiButton-root.button-tag{
     background-color: yellow;
     color: black;
@@ -196,6 +205,17 @@ body {
     animation: animate 4s steps(12) infinite;
   }
   
+  
+  .skill-item {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+  
+  .skill-item.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
   @keyframes animate {
     40%, 60% {
       left: calc(100% + 4px);
@@ -204,13 +224,5 @@ body {
       left: 0%;
     }
   }
-  .section-offset::before {
-    display: block;
-    height: 350px;
-    margin-top: -250px;
-    visibility: hidden;
-    content: "";
-  }
-  
   
   

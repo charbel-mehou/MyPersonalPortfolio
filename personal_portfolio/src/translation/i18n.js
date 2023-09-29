@@ -36,12 +36,14 @@ const resources = {
       'gmail':'Gmail',
       'github':'Github',
       'linkedIn':'LinkedIn',
-      "contact-me":"To Reach Me",
+      "contact-me":"Here is my links and contacts",
       "certifications":"Certifications",
       "certif-complete":"Course Completion Certificate of ",
       "myftjourney":'Gym Training Plateform',
-      "and":"and"
-
+      "and":"and",
+      'management':'Project Management',
+      'languages':'Languages',
+      'logiciel':'Logiciel'
     }
   },
   fr: {
@@ -78,11 +80,15 @@ const resources = {
       'gmail':'Gmail',
       'github':'Github',
       'linkedIn':'LinkedIn',
-      "contact-me":"Pour me contactez",
+      "contact-me":"Voici mes Liens et Contacts",
       "certifications":"Certifications",
       "certif-complete":"Certificat de complétion de cours de",
       "myftjourney":'PlateForme d\'aide à l\'entrainement',
-      "and":'et'
+      "and":'et',
+      'management':'Gestion de Projet',
+      'languages':'Languages',
+      'logiciel':'Logiciel',
+        
     }
       
   }

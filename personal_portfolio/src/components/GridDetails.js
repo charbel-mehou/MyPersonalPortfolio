@@ -1,37 +1,46 @@
-import { Box, Grid, Typography } from "@mui/material";
-import React from "react";
-import { useTranslation } from "react-i18next";
+// GridDetails.js
 
-const GridDetails = ({id,title,tab}) => {
-  const { t } = useTranslation();
+import React, { useEffect, useState } from "react";
+import { Box, Grid, Typography } from "@mui/material";
+import { useInView } from "react-intersection-observer";
+
+const GridDetails = ({ id, tab }) => {
+  const [ref, inView] = useInView();
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    if (inView) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  }, [inView]);
 
   return (
     <Box
-      className="section-offset"
       id={id}
-      sx={{ display: "flex", flexDirection: "column", mt: 2 }}
+      ref={ref}
+      sx={{ display: "flex", flexDirection: "column" }}
     >
-      <Box className="title-box" sx={{ py: 1 }}>
-        <Typography variant="h5" className="title">
-          {" "}
-          {t(title)}
-        </Typography>
-      </Box>
-
       <Box
-        className="section-box"
         sx={{
           display: "flex",
           flexDirection: "row",
-          p: 2,
           mx: "12px",
         }}
       >
-        <Grid container spacing={2} alignItems="flex-start" sx={{xs:'wrap',lg:'nowrap'}}>
+        <Grid
+          container
+          spacing={2}
+          alignItems="flex-start"
+          sx={{ xs: "wrap", lg: "nowrap" }}
+        >
           {tab?.map((tabItem, index) => (
-            <Grid item xs={12} sm={6} md={4} key={index}>
+            <Grid item xs={12} sm={6} md={3} key={index}>
               <Box
-                className="skill-item bg-slate-900 bg-opacity-70 "
+                className={`skill-item bg-slate-900 bg-opacity-70 ${
+                  isVisible ? "fade-in" : ""
+                }`}
                 sx={{
                   display: "flex",
                   flexDirection: "row",
@@ -41,11 +50,11 @@ const GridDetails = ({id,title,tab}) => {
                 }}
               >
                 <img
-                  style={{ width: "70px", height: "70px" }}
+                  style={{ width: "40px", height: "auto" }}
                   src={tabItem.logo}
                   alt={tabItem.label}
                 />
-                <Typography variant="h5" style={{ color: "white" }}>
+                <Typography variant="h6" style={{ color: "white" }}>
                   {tabItem.label}
                 </Typography>
               </Box>

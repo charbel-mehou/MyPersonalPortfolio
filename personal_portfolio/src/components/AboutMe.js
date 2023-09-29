@@ -92,28 +92,28 @@ const AboutMe = () => {
               <Button
                 variant="contained"
                 onClick={handleLInkedLnClick}
-                sx={{ backgroundColor: "#416DD1", gap: 1 }}
+                sx={{ width:'164px',backgroundColor: "#416DD1", gap: 1 }}
               >
                 <LinkedInIcon /> {t("linkedIn")}
               </Button>
 
               <Button
                 variant="contained"
-                sx={{ backgroundColor: "#416DD1", gap: 1 }}
+                sx={{ width:'164px',backgroundColor: "#416DD1", gap: 1 }}
                 onClick={handleGithubClic}
               >
                 <GitHubIcon /> {t("github")}
               </Button>
               <Button
                 variant="contained"
-                sx={{ backgroundColor: "#416DD1", gap: 1 }}
+                sx={{width:'164px', backgroundColor: "#416DD1", gap: 1 }}
                 onClick={handleEmailClick}
               >
                 <MailOutlineIcon /> {t("gmail")}
               </Button>
               <Button
                 variant="contained"
-                sx={{ backgroundColor: "#416DD1", gap: 1 }}
+                sx={{width:'164px', backgroundColor: "#416DD1", gap: 1 }}
               >
                 <PhoneIcon />
                 07 58 65 94 51
