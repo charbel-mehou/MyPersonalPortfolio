@@ -16,6 +16,7 @@ import Agile from "../assets/icons/agile.png";
 import VS from "../assets/icons/VS.png";
 import VsCode from "../assets/icons/VsCode.png";
 import MySQL from "../assets/icons/MySql.png";
+import MongoDB from "../assets/icons/MongoDb.png";
 import { Element } from "react-scroll";
 import { Box, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
@@ -44,6 +45,8 @@ const SkillsDetails = () => {
     { logo: VS, label: "Visual Studio" },
     { logo: VsCode, label: "Visual Studio Code" },
     { logo: MySQL, label: "MySQL" },
+    { logo: MongoDB, label: "MongoDB" },
+
   ];
 
   return (
