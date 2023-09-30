@@ -6,10 +6,12 @@ import Csharp from "../assets/images/CsharpCertif.png";
 import JavaScript from "../assets/images/JavascriptCertif.png";
 import ReactCertif from "../assets/images/ReactCertif.png";
 import BoxDetails from "./BoxDetails";
+import Node from '../assets/images/NodeJs.png'
 const certifstab = [
   { logo: ReactCertif, label: "React.js" ,link:'https://urlz.fr/nC41'},
   { logo: JavaScript, label: "Javascript",link:'https://urlz.fr/nC3C' },
   { logo: Csharp, label: "C#",link:'https://urlz.fr/nC3v'},
+  { logo: Node, label: "Node.js",link:'https://cutt.ly/GwbUeUAQ'},
 ];
 const CertificationsDetails = () => {
   const { t } = useTranslation();

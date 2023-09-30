@@ -55,9 +55,9 @@ const Navbar = () => {
           <a href="#certifications" className="link-style">
             {t("certifications")}
           </a>
-          <a href="#interests" className="link-style">
+          {/* <a href="#interests" className="link-style">
             {t("interests")}
-          </a>
+          </a> */}
         </Box>
         <Box sx={{
             display: { xs: "none", md: "flex" },
@@ -107,11 +107,11 @@ const Navbar = () => {
                 {t("certifications")}
               </a>
             </Typography>
-            <Typography variant="subtitle1">
+            {/* <Typography variant="subtitle1">
               <a href="#interests" className="link-style" onClick={handleMenuClose}>
                 {t("interests")}
               </a>
-            </Typography>
+            </Typography> */}
           <LangageSwitcher />
           </Box>
         </Popover>
