@@ -16,7 +16,7 @@ const App = () => {
   return (
     <Box>
       <Navbar />
-      <Box sx={{ px: 5 }}>
+      <Box sx={{ px: 2 }}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="aboutMe" element={<AboutMe />} />
