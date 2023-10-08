@@ -43,7 +43,8 @@ const resources = {
       "and":"and",
       'management':'Project Management',
       'languages':'Languages',
-      'logiciel':'Logiciel'
+      'logiciel':'Logiciel',
+      'agile-Methodology':'Agile Methodology'
     }
   },
   fr: {
@@ -88,7 +89,7 @@ const resources = {
       'management':'Gestion de Projet',
       'languages':'Languages',
       'logiciel':'Logiciel',
-        
+      'agile-Methodology':' Méthode Agile'
     }
       
   }
