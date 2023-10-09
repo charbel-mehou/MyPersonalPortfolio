@@ -60,8 +60,7 @@ const AboutMe = () => {
             </Typography>
             <Typography variant="h5">
             {t("me-3-1")}
-              <span style={{ color: "#416DD1" }}>  HTML,CSS<br/></span>
-              <span style={{ color: "#416DD1" }}>JavaScript,React </span>
+              <span style={{ color: "#416DD1" }}>React </span> {t('and')}
               {t('and')}<span style={{ color: "#416DD1" }}> C# </span>
             </Typography>
           </Box>
