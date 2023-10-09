@@ -17,6 +17,7 @@ import VS from "../assets/icons/VS.png";
 import VsCode from "../assets/icons/VsCode.png";
 import MySQL from "../assets/icons/MySql.png";
 import MongoDB from "../assets/icons/MongoDb.png";
+import Oracle from '../assets/icons/oracle.png'
 import { Element } from "react-scroll";
 import { Box, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
@@ -46,7 +47,7 @@ const SkillsDetails = () => {
     { logo: VsCode, label: "Visual Studio Code" },
     { logo: MySQL, label: "MySQL" },
     { logo: MongoDB, label: "MongoDB" },
-
+    { logo: Oracle, label: "Oracle" },
   ];
 
   return (
@@ -64,6 +65,12 @@ const SkillsDetails = () => {
             </Typography>
             <GridDetails id={"skills"} tab={skillstab} />
           </Box>
+          <Box sx={{ mb:1 }}>
+            <Typography variant="h6" className="title" >
+              {t("logiciel")}
+            </Typography>
+            <GridDetails id={"logiciel"} tab={logicielstab} />
+          </Box>
           <Box sx={{mb:1 }}>
             <Typography variant="h6" className="title" >
               {t("management")}
@@ -72,12 +79,6 @@ const SkillsDetails = () => {
               id={"projectManagement"}
               tab={projectManagementSkillstab}
             />
-          </Box>
-          <Box sx={{ mb:1 }}>
-            <Typography variant="h6" className="title" >
-              {t("logiciel")}
-            </Typography>
-            <GridDetails id={"logiciel"} tab={logicielstab} />
           </Box>
         </Box>
       </Element>
