@@ -7,7 +7,6 @@ import JsLogo from "../assets/icons/js-icon.png";
 import PhpLogo from "../assets/icons/php-icon.png";
 import ReactLogo from "../assets/icons/react-icon.png";
 import Sql from "../assets/icons/sql.png";
-import TypeScriptLogo from "../assets/icons/typescript-icon.png";
 import NodeLogo from "../assets/icons/nodejs.png";
 import GridDetails from "./GridDetails";
 import Attlassian from "../assets/icons/attlassian.png";
@@ -17,7 +16,7 @@ import VS from "../assets/icons/VS.png";
 import VsCode from "../assets/icons/VsCode.png";
 import MySQL from "../assets/icons/MySql.png";
 import MongoDB from "../assets/icons/MongoDb.png";
-import Oracle from '../assets/icons/oracle.png'
+import Oracle from "../assets/icons/oracle.png";
 import { Element } from "react-scroll";
 import { Box, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
@@ -28,7 +27,6 @@ const SkillsDetails = () => {
   const skillstab = [
     { logo: ReactLogo, label: "React" },
     { logo: PhpLogo, label: "Php" },
-    { logo: TypeScriptLogo, label: "TypeScript" },
     { logo: CsharpLogo, label: "C#" },
     { logo: HmtlLogo, label: "Html" },
     { logo: JsLogo, label: "JavaScript" },
@@ -58,21 +56,24 @@ const SkillsDetails = () => {
             {t("skills")}
           </Typography>
         </Box>
-        <Box sx={{ display: "flex", flexDirection: "column", gap: 2, p: 2 }} className="section-box">
-          <Box sx={{ mb:1 }}>
-            <Typography variant="h6" className="title" >
+        <Box
+          sx={{ display: "flex", flexDirection: "column", gap: 2, p: 2 }}
+          className="section-box"
+        >
+          <Box sx={{ mb: 1 }}>
+            <Typography variant="h6" className="title">
               {t("languages")}
             </Typography>
             <GridDetails id={"skills"} tab={skillstab} />
           </Box>
-          <Box sx={{ mb:1 }}>
-            <Typography variant="h6" className="title" >
+          <Box sx={{ mb: 1 }}>
+            <Typography variant="h6" className="title">
               {t("logiciel")}
             </Typography>
             <GridDetails id={"logiciel"} tab={logicielstab} />
           </Box>
-          <Box sx={{mb:1 }}>
-            <Typography variant="h6" className="title" >
+          <Box sx={{ mb: 1 }}>
+            <Typography variant="h6" className="title">
               {t("management")}
             </Typography>
             <GridDetails
