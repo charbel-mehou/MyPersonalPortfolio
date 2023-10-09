@@ -36,7 +36,7 @@ const GridDetails = ({ id, tab }) => {
           sx={{ xs: "wrap", lg: "nowrap" }}
         >
           {tab?.map((tabItem, index) => (
-            <Grid item xs={12} sm={6} md={3} key={index}>
+            <Grid item xs={12} sm={6} md={4} key={index}>
               <Box
                 className={`skill-item bg-slate-900 bg-opacity-70 ${
                   isVisible ? "fade-in" : ""

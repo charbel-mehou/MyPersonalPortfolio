@@ -26,8 +26,8 @@ const SkillsDetails = () => {
 
   const skillstab = [
     { logo: ReactLogo, label: "React" },
-    { logo: PhpLogo, label: "Php" },
     { logo: CsharpLogo, label: "C#" },
+    { logo: PhpLogo, label: "Php" },
     { logo: HmtlLogo, label: "Html" },
     { logo: JsLogo, label: "JavaScript" },
     { logo: Java, label: "Java" },
