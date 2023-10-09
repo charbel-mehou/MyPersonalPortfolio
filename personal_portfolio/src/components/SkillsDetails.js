@@ -39,7 +39,7 @@ const SkillsDetails = () => {
   ];
   const projectManagementSkillstab = [
     { logo: Git, label: "Git & GitLab" },
-    { logo: Agile, label: "Agile Methodology" },
+    { logo: Agile, label: t("agile-methodology") },
     { logo: Attlassian, label: "Attlassian Jira" },
   ];
   const logicielstab = [
