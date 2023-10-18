@@ -51,7 +51,7 @@ const ProjectsDetails = () => {
         screen={ProjectJava1Screen3}
         vercelLink={""}
         vercelLinkdisplayed={false}
-        githubLink={""}
+        githubLink={"https://github.com/CharbelMehou/Recensement-des-Infrastructures-Sportives"}
         githubLinkdisplayed={true}
         descriptions={[{ label: "infrastructur-sportive-p1" }]}
         tags={[{ label: "#JAVA" }, { label: "#HTML" }, { label: "#CSS" }]}
