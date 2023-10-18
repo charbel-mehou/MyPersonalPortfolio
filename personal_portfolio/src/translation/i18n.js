@@ -44,7 +44,9 @@ const resources = {
       'management':'Project Management',
       'languages':'Languages',
       'logiciel':'Logiciel',
-      'agile-methodology':'Agile Methodology'
+      'agile-methodology':'Agile Methodology',
+      "infrastructur-sportive":"Census of Sports Infrastructures",
+      "details-here":"Details here"
     }
   },
   fr: {
@@ -89,7 +91,10 @@ const resources = {
       'management':'Gestion de Projet',
       'languages':'Languages',
       'logiciel':'Logiciel',
-      'agile-methodology':' Méthode Agile'
+      'agile-methodology':' Méthode Agile',
+      "infrastructur-sportive":"Reçensement des Infrastructures Sportives",
+      'infrastructur-sportive-p1':"Il s'agit d'un site web recensant les structures sportives francaise sur une carte interactive en intégrant les informations des mairies associées",
+      "details-here":"Details ici"
     }
       
   }
