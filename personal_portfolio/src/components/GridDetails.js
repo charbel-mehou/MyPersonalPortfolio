@@ -1,5 +1,3 @@
-// GridDetails.js
-
 import React, { useEffect, useState } from "react";
 import { Box, Grid, Typography } from "@mui/material";
 import { useInView } from "react-intersection-observer";
