@@ -27,13 +27,13 @@ const SkillsDetails = () => {
   const skillstab = [
     { logo: ReactLogo, label: "React" },
     { logo: CsharpLogo, label: "C#" },
-    { logo: PhpLogo, label: "Php" },
-    { logo: HmtlLogo, label: "Html" },
-    { logo: JsLogo, label: "JavaScript" },
-    { logo: Java, label: "Java" },
-    { logo: Sql, label: "SQL" },
-    { logo: Css, label: "Css" },
     { logo: NodeLogo, label: "Node.js" },
+    { logo: Java, label: "Java" },
+    { logo: JsLogo, label: "JavaScript" },
+    { logo: HmtlLogo, label: "Html" },
+    { logo: Css, label: "Css" },
+    { logo: PhpLogo, label: "Php" },
+    { logo: Sql, label: "SQL" },
   ];
   const projectManagementSkillstab = [
     { logo: Git, label: "Git & GitLab" },
