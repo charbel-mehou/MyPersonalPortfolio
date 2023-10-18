@@ -42,10 +42,7 @@ const ProjectCard = ({
             {t(description.label)}
           </Typography>
         ))}
-         <RouterLink to={`/project/${id}`}>
-          {t("details-here")}
-          <LaunchIcon />
-        </RouterLink>
+
         {vercelLinkdisplayed ? (
           <Button
             variant="contained"
