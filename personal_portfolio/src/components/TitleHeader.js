@@ -31,7 +31,7 @@ const TitleHeader = () => {
       }}
     >
       <Typography variant="h5">{t('me-4')}</Typography>
-      <Typography variant="h3" fontFamily="cursive"  sx={{ color: '#416DD1' }}><span className="text sec-text"> {t(text)}</span>
+      <Typography variant="h3" fontFamily="Comic Sans MS"  sx={{ color: '#416DD1' }}><span className="text sec-text"> {t(text)}</span>
       </Typography>
     </Box>
   );
