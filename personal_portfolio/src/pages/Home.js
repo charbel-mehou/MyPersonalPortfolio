@@ -5,13 +5,22 @@ import ProjectsDetails from "../components/ProjectsDetails";
 import SkillsDetails from "../components/SkillsDetails";
 import InterestDetails from "../components/InterestDetails";
 import CertificationsDetails from "../components/CertificationsDetails";
+import { useEffect, useRef } from "react";
 
 const Home = () => {
+  const projectsRef = useRef(null);
+
+  useEffect(() => {
+    if (projectsRef.current) {
+      projectsRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
+
   return (
     <Box>
       <AboutMe />
       <SkillsDetails />
-      <ProjectsDetails />
+      <ProjectsDetails ref={projectsRef} />    
       <CertificationsDetails />
     </Box>
   );

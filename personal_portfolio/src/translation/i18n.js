@@ -32,6 +32,7 @@ const resources = {
       "myportfolio-d1":"This is my Web portfolio",
       "myportfolio-d2":"Here you can have acces to my deployed projects",
       "web-portfolio":"Web Portfolio",
+      "portfolio-d1":"On my web portfolio, explore my professional journey, skills, and a selection of my personal and academic projects. Some projects feature links to the deployed site and the associated GitHub repository. You'll also find my certifications and links to my online profiles, such as LinkedIn and GitHub, along with my contact details.",
       "interests":"Interests",
       'gmail':'Gmail',
       'github':'Github',
@@ -39,14 +40,18 @@ const resources = {
       "contact-me":"Here is my links and contacts",
       "certifications":"Certifications",
       "certif-complete":"Course Completion Certificate of ",
-      "myftjourney":'Gym Training Plateform',
       "and":"and",
       'management':'Project Management',
       'languages':'Languages',
       'logiciel':'Logiciel',
       'agile-methodology':'Agile Methodology',
       "infrastructur-sportive":"Census of Sports Infrastructures",
-      "details-here":"Details here"
+      "details-here":"Details here",
+      "myftjourney-speech": "MyFitJourney is a web app tailored to guide users through effective training exercises. Each exercise comes with clear descriptions and supportive YouTube videos. The platform also features tips for weight loss and muscle gain objectives.",
+      "visit-here": "Visit the site",
+      "back": "Back",
+      "technology":'Technology',
+      "infrastructures-sportives-speech": "This web app is a project that maps sporting structures across France through an interactive chart. Users can search for a specific facility and get its location as well as the associated town hall's location. Detailed information about the town halls is also provided."
     }
   },
   fr: {
@@ -74,11 +79,10 @@ const resources = {
       "me-5-1":" Développeur",
       "welcome":'Bienvenue sur mon portfolio web ! ',
       "projet":"Projet",
-      "myftjourney-d1":"Une application fournissant des conseils",
-      "myftjourney-d2":"pour aider les utilisateurs à s'entraîner efficacement",
-      "myportfolio-d1":"Il s'agit de mon Web portfolio ",
-      "myportfolio-d2":"Où vous pouvez avoir accès à mes projets déployés",
+      "myftjourney-d1":"Une application fournissant des conseils pour aider les utilisateurs à s'entraîner efficacement",
+      "myportfolio-d1":"Il s'agit de mon Web portfolio où vous pouvez avoir accès à mes projets déployés",
       "web-portfolio":"Web Portfolio",
+      "portfolio-d1":"Sur mon portfolio web, découvrez mon parcours professionnel, mes compétences et une sélection de mes projets personnels et académiques. Certains projets comprennent des liens vers le site déployé et le repository GitHub associé. Vous y trouverez également mes certifications et des liens vers mes profils en ligne, tels que LinkedIn et GitHub, ainsi que mes coordonnées",
       "interests":"Centres d'intérêt",
       'gmail':'Gmail',
       'github':'Github',
@@ -86,15 +90,21 @@ const resources = {
       "contact-me":"Voici mes Liens et Contacts",
       "certifications":"Certifications",
       "certif-complete":"Certificat de complétion de cours de",
-      "myftjourney":'PlateForme d\'aide à l\'entrainement',
+      "myftjourney":'Plateforme d\'aide à l\'entrainement',
       "and":'et',
       'management':'Gestion de Projet',
       'languages':'Languages',
       'logiciel':'Logiciel',
       'agile-methodology':' Méthode Agile',
       "infrastructur-sportive":"Reçensement des Infrastructures Sportives",
-      'infrastructur-sportive-p1':"Il s'agit d'un site web recensant les structures sportives francaise sur une carte interactive en intégrant les informations des mairies associées",
-      "details-here":"Details ici"
+      'infrastructur-sportive-p1':"Site web cartographiant les infrastructures sportives françaises avec les informations des mairies associées",
+      "details-here":"Details ici",
+      "myftjourney-speech": "MyFitJourney est une application web conçue pour guider les utilisateurs à travers des exercices d'entraînement efficaces. Chaque exercice est accompagné de descriptions claires et de vidéos YouTube explicatives. La plateforme propose également des astuces pour les objectifs de perte de poids et de prise de muscle.",
+      "visit-here":"Visiter le site",
+      "back":"Retour",
+      "technology":'Technologies',
+      "infrastructures-sportives-speech": "C'est une application web qui permet de localiser les structures sportives en France via une carte interactive. Les utilisateurs peuvent rechercher une infrastructure spécifique et obtenir sa localisation ainsi que celle de la mairie associée. Des informations détaillées sur les mairies sont également disponibles."
+
     }
       
   }

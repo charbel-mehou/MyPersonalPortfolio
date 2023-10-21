@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Box, IconButton, Popover, Typography } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import Logo from "../assets/icons/logoName.png";
-
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import LangageSwitcher from "./langageSwitcher";
 
@@ -31,43 +31,82 @@ const Navbar = () => {
         alignItems: "center",
       }}
     >
+      <Link to="/">
         <img src={Logo} alt="logo" style={{ height: "50px" }} />
-      
-        <Box
-          sx={{
-            display: { xs: "none", md: "flex" },
-            alignItems: "center",
-            justifyContent: "flex-start",
-            gap: 2,
-            fontSize: "20px",
+      </Link>
+
+      <Box
+        sx={{
+          display: { xs: "none", md: "flex" },
+          alignItems: "center",
+          justifyContent: "flex-start",
+          gap: 2,
+          fontSize: "20px",
+        }}
+      >
+        {/* Nav items for larger screens */}
+        <a
+          href="#aboutMe"
+          className="link-style"
+          onClick={(e) => {
+            if (window.location.pathname.includes("/project/")) {
+              e.preventDefault();
+              window.location.href = "/#aboutMe";
+            }
           }}
         >
-          {/* Nav items for larger screens */}
-          <a href="#aboutMe" className="link-style">
-            {t("about")}
-          </a>
-          <a href="#skills" className="link-style">
-            {t("skills")}
-          </a>
-          <a href="#projects" className="link-style">
-            {t("projects")}
-          </a>
-          <a href="#certifications" className="link-style">
-            {t("certifications")}
-          </a>
-          {/* <a href="#interests" className="link-style">
+          {t("about")}
+        </a>
+
+        <a
+          href="#skills"
+          className="link-style"
+          onClick={(e) => {
+            if (window.location.pathname.includes("/project/")) {
+              e.preventDefault();
+              window.location.href = "/#skills";
+            }
+          }}
+        >
+          {t("skills")}
+        </a>
+        <a
+          href="#projects"
+          className="link-style"
+          onClick={(e) => {
+            if (window.location.pathname.includes("/project/")) {
+              e.preventDefault();
+              window.location.href = "/#projects";
+            }
+          }}
+        >
+          {t("projects")}
+        </a>
+        <a
+          href="#certifications"
+          className="link-style"
+          onClick={(e) => {
+            if (window.location.pathname.includes("/project/")) {
+              e.preventDefault();
+              window.location.href = "/#certifications";
+            }
+          }}
+        >
+          {t("certifications")}
+        </a>
+        {/* <a href="#interests" className="link-style">
             {t("interests")}
           </a> */}
-        </Box>
-        <Box sx={{
-            display: { xs: "none", md: "flex" },
-            alignItems: "center",
-            justifyContent: "flex-end",
-           
-          }}>
-
+      </Box>
+      <Box
+        sx={{
+          display: { xs: "none", md: "flex" },
+          alignItems: "center",
+          justifyContent: "flex-end",
+        }}
+      >
         <LangageSwitcher />
-        </Box>
+      </Box>
       <Box sx={{ display: { xs: "flex", md: "none" } }}>
         <IconButton onClick={handleMenuClick} sx={{ color: "white" }}>
           <MenuIcon />
@@ -86,24 +125,40 @@ const Navbar = () => {
             horizontal: "center",
           }}
         >
-          <Box sx={{ p: 2,backgroundColor:'black'}}>
+          <Box sx={{ p: 2, backgroundColor: "black" }}>
             <Typography variant="subtitle1">
-              <a href="#aboutMe" className="link-style" onClick={handleMenuClose}>
+              <a
+                href="#aboutMe"
+                className="link-style"
+                onClick={handleMenuClose}
+              >
                 {t("about")}
               </a>
             </Typography>
             <Typography variant="subtitle1">
-              <a href="#skills"className="link-style" onClick={handleMenuClose}>
+              <a
+                href="#skills"
+                className="link-style"
+                onClick={handleMenuClose}
+              >
                 {t("skills")}
               </a>
             </Typography>
-            <Typography variant="subtitle1" >
-              <a href="#projects" className="link-style" onClick={handleMenuClose}>
+            <Typography variant="subtitle1">
+              <a
+                href="#projects"
+                className="link-style"
+                onClick={handleMenuClose}
+              >
                 {t("projects")}
               </a>
             </Typography>
-            <Typography variant="subtitle1" >
-              <a href="#certifications" className="link-style" onClick={handleMenuClose}>
+            <Typography variant="subtitle1">
+              <a
+                href="#certifications"
+                className="link-style"
+                onClick={handleMenuClose}
+              >
                 {t("certifications")}
               </a>
             </Typography>
@@ -112,7 +167,7 @@ const Navbar = () => {
                 {t("interests")}
               </a>
             </Typography> */}
-          <LangageSwitcher />
+            <LangageSwitcher />
           </Box>
         </Popover>
       </Box>
