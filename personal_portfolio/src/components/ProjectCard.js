@@ -42,6 +42,10 @@ const ProjectCard = ({
             {t(description.label)}
           </Typography>
         ))}
+        <RouterLink to={`/project/${id}`} className="white-link">
+          {t("details-here")}
+          <LaunchIcon />
+        </RouterLink>
 
         {vercelLinkdisplayed ? (
           <Button
