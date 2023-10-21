@@ -48,7 +48,7 @@ const GridDetails = ({ id, tab }) => {
                 }}
               >
                 <img
-                  style={{ width: "40px", height: "auto" }}
+                  style={{ width: "40px", height: "40px" }}
                   src={tabItem.logo}
                   alt={tabItem.label}
                 />
