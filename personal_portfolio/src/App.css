@@ -36,7 +36,9 @@ body {
         height: 60px !important;
         width: 100% !important;
         }
-        
+        .box-projet-speech{
+          width:50vw;
+        }      
 .footer{
     background-color: rgb(0,0,0);
     gap:  40px ;
@@ -45,13 +47,16 @@ body {
     color: #fff; 
     margin-top: 20px;
 }
-@media (min-width: 576px) { 
+@media (max-width: 576px) { 
      .navbar {
         gap: 123px;
     }
     .section-box2{
       max-height: 100vh;
        width: auto;
+    }   
+    .box-projet-speech{
+      width: 80vw;
     }
 }
 
@@ -118,6 +123,17 @@ body {
     padding:30px;
     width: auto;
     background-color: #0b1f43;
+    transition:  0.3s ease-in-out
+}
+.white-link {
+  color: white;
+}
+
+.projectDescription{
+    border-radius: 20px;
+    padding:30px;
+    margin-left: 20px;
+    background-color: rgb(30 41 59);
     transition:  0.3s ease-in-out
 }
 .skill-item{
