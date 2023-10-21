@@ -127,6 +127,7 @@ body {
 }
 .white-link {
   color: white;
+  font-weight: bold;
 }
 
 .projectDescription{
