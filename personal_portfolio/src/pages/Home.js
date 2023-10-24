@@ -10,11 +10,11 @@ import { useEffect, useRef } from "react";
 const Home = () => {
   const projectsRef = useRef(null);
 
-  useEffect(() => {
-    if (projectsRef.current) {
-      projectsRef.current.scrollIntoView({ behavior: "smooth" });
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (projectsRef.current) {
+  //     projectsRef.current.scrollIntoView({ behavior: "smooth" });
+  //   }
+  // }, []);
 
   return (
     <Box>

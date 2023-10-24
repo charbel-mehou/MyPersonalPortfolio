@@ -4,7 +4,7 @@ import Css from "../assets/icons/css.png";
 import HmtlLogo from "../assets/icons/html-icon.png";
 import Java from "../assets/icons/javaicon.png";
 import JsLogo from "../assets/icons/js-icon.png";
-import PhpLogo from "../assets/icons/php-icon.png";
+import Net from "../assets/icons/net.png";
 import ReactLogo from "../assets/icons/react-icon.png";
 import Sql from "../assets/icons/sql.png";
 import NodeLogo from "../assets/icons/nodejs.png";
@@ -27,12 +27,12 @@ const SkillsDetails = () => {
   const skillstab = [
     { logo: ReactLogo, label: "React" },
     { logo: CsharpLogo, label: "C#" },
+    { logo: Net, label: ".Net" },
     { logo: NodeLogo, label: "Node.js" },
     { logo: Java, label: "Java" },
     { logo: JsLogo, label: "JavaScript" },
     { logo: HmtlLogo, label: "Html" },
     { logo: Css, label: "Css" },
-    { logo: PhpLogo, label: "Php" },
     { logo: Sql, label: "SQL" },
   ];
   const projectManagementSkillstab = [
