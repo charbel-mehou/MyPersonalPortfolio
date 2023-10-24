@@ -18,6 +18,7 @@ import MySQL from "../assets/icons/MySql.png";
 import MongoDB from "../assets/icons/MongoDb.png";
 import Oracle from "../assets/icons/oracle.png";
 import { Element } from "react-scroll";
+import SSMS from '../assets/icons/ssms.png';
 import { Box, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
 
@@ -46,6 +47,8 @@ const SkillsDetails = () => {
     { logo: MySQL, label: "MySQL" },
     { logo: MongoDB, label: "MongoDB" },
     { logo: Oracle, label: "Oracle" },
+    { logo: SSMS, label: "SQL Server" },
+
   ];
 
   return (
