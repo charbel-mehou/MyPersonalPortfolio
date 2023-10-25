@@ -29,7 +29,9 @@ const ProjectCard = ({
       sx={{ display: "flex", flexDirection: "column" }}
     >
       <Box sx={{ mb: 1 }}>
-        <Typography style={{ color: "white" }}>{t(title)}</Typography>
+        <Typography style={{ color: "white", fontWeight: "bold" }}>
+          {t(title)}
+        </Typography>
       </Box>
 
       <Box sx={{ display: "flex" }}>
