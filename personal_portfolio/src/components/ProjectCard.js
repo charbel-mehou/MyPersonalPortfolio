@@ -61,7 +61,7 @@ const ProjectCard = ({
               height: { xs: "auto", lg: "100%" },
             }}
           >
-            {t("view-here")}
+            {t("visit-here")}
             <LaunchIcon />
           </Button>
         ) : (
@@ -77,7 +77,7 @@ const ProjectCard = ({
                 height: { xs: "auto", lg: "100%" },
               }}
             >
-              {t("view-here")}
+              {t("visit-here")}
               <LaunchIcon />
             </Button>
           </>
