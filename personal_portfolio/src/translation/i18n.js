@@ -92,7 +92,7 @@ const resources = {
       "contact-me":"Voici mes Liens et Contacts",
       "certifications":"Certifications",
       "certif-complete":"Certificat de complétion de cours de",
-      "myftjourney":'Training assistance platform',
+      "myftjourney":'Plateforme d\'aide à l\'entrainement',
       "and":'et',
       'management':'Gestion de Projet',
       'languages':'Languages',
