@@ -1,5 +1,6 @@
 import { Box, Button, Typography } from "@mui/material";
 import LaunchIcon from "@mui/icons-material/Launch";
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { Link as RouterLink } from "react-router-dom";
@@ -62,7 +63,7 @@ const ProjectCard = ({
             }}
           >
             {t("visit-here")}
-            <LaunchIcon />
+            <ArrowForwardIosIcon />
           </Button>
         ) : (
           <>
