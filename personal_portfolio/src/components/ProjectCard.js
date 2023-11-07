@@ -47,7 +47,7 @@ const ProjectCard = ({
         ))}
         <RouterLink to={`/project/${id}`} className="white-link">
           {t("details-here")}
-          <LaunchIcon />
+          <ArrowForwardIosIcon />
         </RouterLink>
 
         {vercelLinkdisplayed ? (
@@ -63,7 +63,7 @@ const ProjectCard = ({
             }}
           >
             {t("visit-here")}
-            <ArrowForwardIosIcon />
+            <LaunchIcon />
           </Button>
         ) : (
           <>
