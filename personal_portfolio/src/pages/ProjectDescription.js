@@ -104,6 +104,7 @@ const ProjectDescription = () => {
                 descriptions={[{ label: "myftjourney-speech" }]}
                 tags={[
                   { label: "React.js" },
+                  { label: "#Node.js" },
                   { label: "HTML" },
                   { label: "CSS" },
                   { label: "JavaScript" },
@@ -150,6 +151,7 @@ const ProjectDescription = () => {
                 descriptions={[{ label: "portfolio-d1" }]}
                 tags={[
                   { label: "#React" },
+                  { label: "#Node.js" },
                   { label: "#JavaScript" },
                   { label: "#CSS" },
                 ]}

@@ -9,7 +9,7 @@ import { Box } from "@mui/material";
 
 const ProjectsDetails = forwardRef((props, ref) => {
   const { t } = useTranslation();
-  
+
   return (
     <Box ref={ref}>
       <BoxDetails className="section-offset" id={"projects"} title={"projects"}>
@@ -21,11 +21,10 @@ const ProjectsDetails = forwardRef((props, ref) => {
           vercelLinkdisplayed={true}
           githubLink={"https://github.com/CharbelMehou/FitnessApp"}
           githubLinkdisplayed={true}
-          descriptions={[
-            { label: "myftjourney-d1" },
-          ]}
+          descriptions={[{ label: "myftjourney-d1" }]}
           tags={[
             { label: "#React" },
+            { label: "#Node.js" },
             { label: "#JavaScript" },
             { label: "#CSS" },
             { label: "#API REST" },
@@ -39,11 +38,10 @@ const ProjectsDetails = forwardRef((props, ref) => {
           vercelLinkdisplayed={true}
           githubLink={"https://github.com/CharbelMehou/MyPersonalPortfolio"}
           githubLinkdisplayed={true}
-          descriptions={[
-            { label: "myportfolio-d1" },
-          ]}
+          descriptions={[{ label: "myportfolio-d1" }]}
           tags={[
             { label: "#React" },
+            { label: "#Node.js" },
             { label: "#JavaScript" },
             { label: "#CSS" },
           ]}
@@ -54,7 +52,9 @@ const ProjectsDetails = forwardRef((props, ref) => {
           screen={ProjectJava1Screen3}
           vercelLink={""}
           vercelLinkdisplayed={false}
-          githubLink={"https://github.com/CharbelMehou/Recensement-des-Infrastructures-Sportives"}
+          githubLink={
+            "https://github.com/CharbelMehou/Recensement-des-Infrastructures-Sportives"
+          }
           githubLinkdisplayed={true}
           descriptions={[{ label: "infrastructur-sportive-p1" }]}
           tags={[{ label: "#JAVA" }, { label: "#HTML" }, { label: "#CSS" }]}
