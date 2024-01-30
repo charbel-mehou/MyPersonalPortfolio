@@ -146,9 +146,9 @@ body {
 .projectCard-item:hover {
     transform: scale(1.25);
 }
-/* .projectCard:hover {
-    transform: scale(1.05);
-} */
+.projectCard:hover {
+    transform: scale(1.1);
+}
 .screen-project-image {
     width: 100%;
     height: auto;
