@@ -26,8 +26,7 @@ const ProjectsDetails = forwardRef((props, ref) => {
             { label: "#React" },
             { label: "#Node.js" },
             { label: "#JavaScript" },
-            { label: "#CSS" },
-            { label: "#API REST" },
+            { label: "#CSS" }
           ]}
         />
         <ProjectCard
@@ -57,7 +56,11 @@ const ProjectsDetails = forwardRef((props, ref) => {
           }
           githubLinkdisplayed={true}
           descriptions={[{ label: "infrastructur-sportive-p1" }]}
-          tags={[{ label: "#JAVA" }, { label: "#HTML" }, { label: "#CSS" }]}
+          tags={[{ label: "#JAVA" },
+                { label: "#HTML" }, 
+                { label: "#CSS" },
+                { label: "#SQL" }
+              ]}
         />
       </BoxDetails>
     </Box>
