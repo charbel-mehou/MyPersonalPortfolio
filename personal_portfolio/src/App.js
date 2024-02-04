@@ -12,7 +12,9 @@ import CertificationsDetails from "./components/CertificationsDetails";
 import Home from "./pages/Home";
 import ProjectDescription from "./pages/ProjectDescription";
 import "./translation/i18n";
-
+import { inject } from '@vercel/analytics';
+ 
+inject();
 const App = () => {
   return (
     <Box>
